@@ -17,5 +17,5 @@ $tmp = array(
 
 //$tmp = "aziza = 0, name = Kir,   surname =Sosichka    ,   age=100500";
 
-$tpl = new Tplp("test.tpl");
+$tpl = new Tplp("test.tpl", "", "");
 $tpl -> render($tmp);
