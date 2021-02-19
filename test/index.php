@@ -7,7 +7,6 @@
 
 include_once("../autoload.php");
 
-
 $tmp = array(
   "name" => "Roman",
   "surname" => "Zharov",
