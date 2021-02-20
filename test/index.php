@@ -14,7 +14,7 @@ $tmp = array(
   "text" => "просто текст"
 );
 
-//$tmp = "aziza = 0, name = Kir,   surname =Sosichka    ,   age=100500";
+//$tmp = "name = Kir,   surname =Sosichka    ,   age=100500";
 
 $tpl = new Tplp("test.tpl");
 $tpl -> render($tmp, true); // true - сразу вывести результат.
