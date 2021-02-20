@@ -76,4 +76,4 @@ class Tplp implements TplpInterface {
     echo $tplContent; return true;
   } // end render()
 
-}
+} // end class Tplp
