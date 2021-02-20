@@ -14,7 +14,7 @@ interface TplpInterface {
   static function returnError($error, $str); // возврат ошибок
   public function returnTpl(); // выдает контент с файла .tpl
   public function clearTpl(); // очистить .tpl
-  public function render($content = ""); // сама шаблонизация - array|string $content
+  public function render($content = "", $output = false); // сама шаблонизация - array|string $content
 
 }
 
@@ -52,7 +52,7 @@ class Tplp implements TplpInterface {
     $this -> fileTpl = ""; return true;
   }
 
-  public function render($content = "") {
+  public function render($content = "", $output = false) {
     if( !$content ) self::returnError("emptyTemplate");
     if( !$this -> fileTpl ) self::returnError("emptyTemplate");
     $tplContent = file_get_contents($this -> fileTpl);
@@ -72,6 +72,7 @@ class Tplp implements TplpInterface {
             $tplContent = str_replace($dividers[1] . $key . $dividers[2], $value, $tplContent);
           }
       } else self::returnError("errorTypeTemplate", ".<br>Error: " . $content);
+    if( $output !== true ) return $tplContent;
     echo $tplContent; return true;
   } // end render()
 
