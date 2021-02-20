@@ -21,10 +21,10 @@ interface TplpInterface {
 
 class Tplp implements TplpInterface {
 
-  public $fileTpl; // file.tpl
+  public $fileTpl;
   public $dividers = array(); // разделители по типу {{}}
 
-  static $errors = [ // ошибки
+  static $errors = [
     "tplNameError" => "Ошибка инициализации tpl файла",
     "filePathError" => "Путь к файлу не существует",
     "emptyTemplate" => "Нет входных данных для рендеринга",
@@ -76,4 +76,4 @@ class Tplp implements TplpInterface {
     echo $tplContent; return true;
   } // end render()
 
-} // end class Tplp
+}
