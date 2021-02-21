@@ -27,7 +27,7 @@ class Tplp implements TplpInterface {
   static $errors = [
     "tplNameError" => "Ошибка инициализации tpl файла",
     "filePathError" => "Путь к файлу не существует",
-    "emptyTemplate" => "Нет входных данных для рендеринга",
+    "emptyTemplate" => "Пустой шаблон для рендеринга",
     "errorTypeTemplate" => "Данные должны быть массивом, или строкой"
   ];
 
@@ -53,8 +53,7 @@ class Tplp implements TplpInterface {
   }
 
   public function render($content = "", $output = false) {
-    if( !$content ) self::returnError("emptyTemplate");
-    if( !$this -> fileTpl ) self::returnError("emptyTemplate");
+    if( !$content || !$this -> fileTpl ) self::returnError("emptyTemplate");
     $tplContent = file_get_contents($this -> fileTpl);
     $dividers = $this -> dividers;
     if( is_array($content) ) {
