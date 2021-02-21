@@ -11,9 +11,9 @@ namespace repo\Tplp;
 
 interface TplpInterface {
 
-  static function returnError($error, $str); // возврат ошибок
-  public function returnTpl(); // выдает контент с файла .tpl
-  public function clearTpl(); // очистить .tpl
+  static function returnError($error, $str);
+  public function returnTpl(); // вывод контента с файла .tpl
+  public function clearTpl(); // очистить .tpl с конструктора
   public function render($content = "", $output = false); // сама шаблонизация - array|string $content
 
 }
@@ -22,7 +22,7 @@ interface TplpInterface {
 class Tplp implements TplpInterface {
 
   public $fileTpl;
-  public $dividers = array(); // разделители по типу {{}}
+  public $dividers = array(); // разделители, по умолчанию {{, }}
 
   static $errors = [
     "tplNameError" => "Ошибка инициализации tpl файла",
