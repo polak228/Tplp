@@ -14,7 +14,7 @@ $tmp = array(
   "text" => "просто текст"
 );
 
-// $tmp = "name = Kir, surname = Sosichka, age = 100500, text = тест текст";
+// $tmp = "name = Kir, surname = Sosichka, age = 100500, text = test text";
 
 $tpl = new Tplp("test.tpl");
 $tpl -> render($tmp); // false, вторым аргументом, если не нужно выводить результат.
