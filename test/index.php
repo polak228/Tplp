@@ -17,4 +17,5 @@ $tmp = array(
 // $tmp = "name = Kir, surname = Sosichka, age = 100500, text = тест текст";
 
 $tpl = new Tplp("test.tpl");
-$tpl -> render($tmp, true); // true - сразу вывести результат.
+$tpl -> render($tmp); // false, вторым аргументом, если не нужно выводить результат.
+$tpl -> clearTpl();
