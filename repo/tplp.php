@@ -72,7 +72,7 @@ class Tplp implements TplpInterface {
           }
       } else self::returnError("errorTypeTemplate", ".<br>Error: " . $content);
     if( $output === false ) return $tplContent;
-    echo $tplContent; return true;
+    echo $tplContent;
   } // end render()
 
 }
