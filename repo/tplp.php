@@ -25,10 +25,10 @@ class Tplp implements TplpInterface {
   public $dividers = array(); // разделители, по умолчанию {{, }}
 
   static $errors = [
-    "tplNameError" => "Ошибка инициализации tpl файла",
-    "filePathError" => "Путь к файлу не существует",
-    "emptyTemplate" => "Пустой шаблон для рендеринга",
-    "errorTypeTemplate" => "Данные должны быть массивом, или строкой"
+    "tplNameError" => "ошибка инициализации tpl файла",
+    "filePathError" => "путь к файлу не существует",
+    "emptyTemplate" => "пустой шаблон для рендеринга",
+    "errorTypeTemplate" => "данные должны быть массивом, или строкой"
   ];
 
   static function returnError($error, $str = "") {
