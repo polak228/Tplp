@@ -32,7 +32,7 @@ class Tplp implements TplpInterface {
   ];
 
   static function returnError($error, $str = "") {
-    die("<h1>" . self::$errors[$error] . $str . "</h1>");
+    die("<h1>ERROR: " . self::$errors[$error] . $str . "</h1>");
   }
 
   // __construct() берет только путь к файлу .tpl
