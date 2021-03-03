@@ -1,5 +1,7 @@
 # Tplp
 
+Установка: `git clone https://github.com/polak228/Tplp`.
+
 Для подключения библиотеки: `require("autoload.php");`.
 
 В конструктор класса, первым параметром, 
