@@ -1,8 +1,8 @@
 # Tplp
 
-Установка: `git clone https://github.com/polak228/Tplp`.
+Установка: `git clone https://github.com/polak228/Tplp.git`
 
-Для подключения библиотеки: `require("autoload.php");`.
+Для подключения библиотеки: `require("autoload.php");`
 
 В конструктор класса, первым параметром, 
 передаётся сам файл .tpl. Вторым и третьим -
