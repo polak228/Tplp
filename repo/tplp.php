@@ -1,5 +1,5 @@
 <?php
-namespace repo\Tplp;
+namespace repo;
 
 /**
  * Ну что писать..
@@ -53,7 +53,7 @@ class Tplp implements TplpInterface {
   }
 
   public function render($content = "", $output = true) {
-    if( !$content || !$this -> fileTpl ) self::returnError("emptyTemplate");
+    if( !$this -> fileTpl ) self::returnError("emptyTemplate");
     $tplContent = file_get_contents($this -> fileTpl);
     $dividers = $this -> dividers;
     if( is_array($content) ) {
