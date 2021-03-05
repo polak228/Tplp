@@ -1,5 +1,3 @@
 <?php
-require("repo/tplp.php");
-use repo\Tplp;
-
-class_alias('\repo\Tplp', '\Tplp');
+require "repo/tplp.php";
+class_alias('\Tplp\Tplp', '\Tplp');
