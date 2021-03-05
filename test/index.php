@@ -2,7 +2,7 @@
 include_once("../autoload.php");
 
 /**
- * Директива `use` уже указана в autoload.php.
+ * Директива `use` не указана в autoload.php.
  * При необходимости можно изменить псевдоним
  * класса в autoload.php
  */

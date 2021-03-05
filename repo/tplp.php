@@ -1,5 +1,5 @@
 <?php
-namespace repo;
+namespace Tplp;
 
 /**
  * Ну что писать..
